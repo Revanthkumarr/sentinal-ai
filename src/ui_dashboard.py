@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from streamlit_autorefresh import st_autorefresh
 import matplotlib.pyplot as plt
 import os
 
@@ -20,7 +19,6 @@ def load_alerts():
 
 # Streamlit UI
 st.set_page_config(page_title="Sentinel AI Threat Monitoring", layout="wide")
-st_autorefresh(interval=60000, key="refresh")
 st.title("🛡️ Sentinel AI Threat Monitoring Dashboard")
 
 # Load data
